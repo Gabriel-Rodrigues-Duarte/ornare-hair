@@ -1,0 +1,634 @@
+/* Reset CSS para limpar as margens e preenchimentos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo básico do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Estilo do cabeçalho da página */
+header {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+header .logo {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+header .logo img {
+  max-width: 20%;
+}
+
+header .logo-nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+header .logo-nav img {
+  width: 8%;
+}
+
+.hidden-nav {
+  display: none;
+}
+
+@media (max-width: 535px) {
+  header .logo img {
+    max-width: 50%;
+  }
+}
+
+/* Estilização da barra de navegação */
+nav {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 5px 10px;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+nav li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: rgb(196, 10, 10);
+}
+
+/* Estilo da seção de herói */
+.hero {
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero .principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .principal .img-principal {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .principal img {
+  width: 100%;
+  max-height: 550px;
+}
+
+.principal a {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.principal .box-tittle {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.cta-button,
+nav a {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: rgb(117, 5, 5);
+}
+
+/* Estilo da seção de recursos */
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.features .tittle {
+  display: flex;
+  gap: 10px;
+}
+
+.features .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.features .container-box {
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-box .box-local {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 40%;
+}
+
+.container-box .contato {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 40%;
+}
+
+.features .container-box .box {
+  text-align: start;
+  background-color: rgb(154, 195, 241);
+}
+
+.container-box .local {
+  padding: 5px 10px;
+  border-bottom: 1px solid #afafaf;
+}
+
+.local h1 {
+  margin-bottom: 10px;
+}
+
+.container-box .atendimento {
+  padding: 5px 10px;
+}
+
+.atendimento h1 {
+  margin-bottom: 10px;
+}
+
+.features .box-1 {
+  width: 100%;
+}
+
+.features .maps {
+  width: 100%;
+  padding: 0 10px;
+}
+
+#courses {
+  background-color: rgb(68, 96, 128);
+}
+
+#courses .container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+#courses .box {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 40px;
+}
+
+#courses .section-title {
+  font-size: 28px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+#courses .course-list {
+  padding: 0;
+  text-align: start;
+}
+
+#courses .course-list li {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+#courses .cta-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: rgb(196, 10, 10);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+#courses .cta-button:hover {
+  background-color: rgb(117, 5, 5);
+}
+
+.feature {
+  width: 400px;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature .imgs {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.feature img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.feature .legenda {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 5px 5px;
+  color: white;
+  background-color: #000000;
+  /* rgb(253, 201, 209) */
+}
+
+.feature .legenda h2 {
+  font-size: 24px;
+}
+
+.features .row-gloss {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.feature-gloss {
+  max-width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-gloss .imgs-gloss img {
+  width: 100%;
+  height: 100%;
+}
+
+.feature-gloss .legenda-gloss {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 217, 222);
+}
+
+.feature-gloss .legenda-gloss h2 {
+  font-size: 24px;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Estilização do rodapé */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* -_____- ( * Responsividade * ) -_____- */
+
+@media (max-width: 1223px) {
+  .features .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .row-gloss .features-gloss {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+
+  .container-box .box-local {
+    width: 90%;
+  }
+
+  .container-box .contato {
+    width: 90%;
+  }
+
+  .feature {
+    width: 360px;
+    justify-content: center;
+    box-shadow: 2px 2px 10px #8f8e8e;
+  }
+
+  .features .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature .imgs {
+    height: 100%;
+  }
+
+  .feature .legenda {
+    height: auto;
+  }
+
+  .feature .legenda h2 {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+
+  .hero .principal .img-principal {
+    width: 100%;
+  }
+
+  .principal .box-tittle {
+    top: 60%;
+  }
+
+  .principal a {
+    top: 75%;
+  }
+
+  .cta-button {
+    width: 190px;
+    margin-top: 20px;
+  }
+
+  .feature-gloss {
+    width: 360px;
+    justify-content: center;
+    box-shadow: 2px 2px 10px #8f8e8e;
+  }
+
+  .features-gloss .row-gloss {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature-gloss .imgs-gloss {
+    height: 100%;
+  }
+
+  .feature-gloss .legenda-gloss {
+    height: auto;
+  }
+
+  .feature-gloss .legenda-gloss h2 {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+}
+
+/* _______________________________________________________________ */
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px #585858;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+
+@media (min-width: 769px) {
+  #menu-button {
+    display: none;
+    border: none;
+    color: #000000;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 0;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul.show-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* _______________________---------------------------------_________________________*/
+
+.whatsapp-bar {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 30px 0;
+  position: fixed;
+  text-align: center;
+  justify-content: center;
+  /*   background-color: #333; */
+  /*#25d366 Cor de fundo do WhatsApp */
+}
+
+.whatsapp-bar .contato {
+  display: flex;
+  gap: 30px;
+  width: 280px;
+  height: 50px;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 2px 10px #dababa;
+}
+
+.whatsapp-bar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+}
+
+.whatsapp-bar img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.whatsapp-bar span {
+  font-weight: bold;
+}
+
+/* ________________-----------------------------------------______________________ */
+
+#scroll-to-top-button {
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #000000d2;
+  box-shadow: 2px 2px 10px #000000;
+}
+
+#scroll-to-top-button.hidden {
+  display: none;
+}
+
+/* ______________________________----------------------------------________________________ */
+
+#testimonials {
+  gap: 50px;
+}
+
+/* ______________________________----------------------------------________________________ */
+
+/* .carousel-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+img {
+  width: 100%;
+  max-height: 450px;
+  height: auto;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+} */

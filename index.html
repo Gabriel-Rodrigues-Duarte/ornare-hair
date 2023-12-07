@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="src/img/logo/logo1.jpg" alt="Ornare Hair">
+    </div>
+
+    <nav class="hidden-nav">
+      <button id="menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#gloss">Gloss Express</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#testimonials">Depoimentos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="whatsapp-bar">
+    <div class="contato">
+      <a href="https://api.whatsapp.com/send?phone=61992144749" target="_blank">
+        <img src="src/img/wh3.png" alt="WhatsApp">
+        <span>WhatsApp</span>
+      </a>
+      <a href="tel:61992144740" target="_blank">
+        <img src="src/img/tel2.png" alt="WhatsApp">
+        <span>Ligue</span>
+      </a>
+    </div>
+    <a id="scroll-to-top-button" class="hidden">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+  </div>
+
+  <div class="container">
+
+    <section id="hero" class="hero">
+      <div class="principal">
+        <div class="img-principal">
+          <img src="src/img/NossosServiços/Top.jpg" alt="Foto Principal">
+        </div>
+        <div class="box-tittle">
+          <h3> Salão de Beleza </h3>
+          <h1 style="color: rgb(196, 10, 10);"> ORNARE HAIR </h1>
+        </div>
+
+        <a class="cta-button" href="https://api.whatsapp.com/send?phone=61992144749"> Agende seu Horário </a>
+      </div>
+    </section>
+
+    <section id="services" class="features" style="border-top: 1px solid #d6d6d6;">
+      <p style="border-bottom: 1px solid rgb(196, 10, 10);"> CLS 215 - BLOCO B LOJA 09 - ASA SUL </p>
+
+      <div class="tittle"
+        style="background-color: #dbd6d6; padding: 10px 20px; border-radius: 10px; width: 80%; display: flex; justify-content: center;">
+        <h1> Nossos </h1>
+        <h1 style="color: rgb(196, 10, 10);"> Serviços </h1>
+      </div>
+
+      <div class="row">
+
+        <!-- Carousel -->
+        <!-- <div class="carousel-container">
+          <div class="carousel-slide" id="carousel-slide">
+            <img src="src/img/NossosServiços/CortesCabelo/CorteMasculin.jpg" alt="Imagem 1">
+            <img src="src/img/NossosServiços/CortesCabelo/CorteMasculino.jpg" alt="Imagem 2">
+          </div>
+          <button id="prevBtn" onclick="prevSlide()">Anterior</button>
+          <button id="nextBtn" onclick="nextSlide()">Próxima</button>
+        </div> -->
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/CortesCabelo/CorteFeminino.jpg" alt="Recurso 3">
+          </div>
+          <div class="legenda">
+            <h2> Corte de Cabelo Feminino </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/CortesCabelo/CorteMasculin.jpg" alt="Recurso 3">
+          </div>
+          <div class="legenda">
+            <h2> Corte de Cabelo Masculino </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/DiaNoiva.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Dia da Noiva </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/EscovaExpress.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Escova Express </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/MechasCriativas.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Mechas Criativas </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/Penteados.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Penteados </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/RealinhamentoCapilar.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Realinhamento Capilar </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/TerapiaCapilar.webp" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Terapia Capilar</h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/PigmentacaoLabial.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Pigmentação <br> Labial</h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/ManicurePedicure.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Manicure e Pedicure </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/CuticulaRussa.webp" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Cutícula Russa </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/AlongamentoUnhas.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Alongamento de Unhas <br> (Fibra e Gel) </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/Cilios.jpg" alt="Recurso 2">
+          </div>
+          <div class="legenda">
+            <h2> Alongamento de Cílios</h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/LashLifting.webp" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Lash Lifting </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/DesignerSombrancelha.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Designer de <br> Sombrancelhas </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/Depilacao.webp" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Depilação (Cera e Laser) </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/Massagem.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Massagem </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/SpaPes.webp" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Spa dos Pés </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/Makes/MakeExpress.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Maquiagem Express </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/Makes/MakeClásica.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Maquiagem Clássica </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/Makes/makeNoivas.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Maquiagem para Noivas </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/Makes/MakeDebuntatne.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Maquiagem Debutantes </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/Makes/MakeArtistic.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Maquiagem Artítica </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/NossosServiços/Makes/MakePeleMadur.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Maquiagem para Pele Madura </h2>
+          </div>
+        </div>
+        
+      </div>
+
+      <a class="cta-button" href="https://api.whatsapp.com/send?phone=61992144749"> Agende seu Horário</a>
+
+    </section>
+
+    <section id="gloss" class="features" style="border-top: 1px solid #d6d6d6; background-color: rgb(255, 255, 255);">
+      <div class="tittle"
+        style="background-color: #dbd6d6; padding: 10px 20px; border-radius: 10px; width: 80%; display: flex; justify-content: center;">
+        <h1> Gloss </h1>
+        <h1 style="color: rgb(196, 10, 10);"> Express </h1>
+      </div>
+
+      <div class="row">
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/GlossExpress/Glox Express (1).png" alt="Recurso 1">
+          </div>
+          <!-- <div class="legenda">
+            <h2> Alongamento de Unhas <br> (Fibra e Gel) </h2>
+          </div> -->
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/GlossExpress/Glox Express (2).png" alt="Recurso 1">
+          </div>
+          <!-- <div class="legenda">
+            <h2> Alongamento de Unhas <br> (Fibra e Gel) </h2>
+          </div> -->
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/GlossExpress/Glox Express (3).png" alt="Recurso 1">
+          </div>
+          <!-- <div class="legenda">
+            <h2> Alongamento de Unhas <br> (Fibra e Gel) </h2>
+          </div> -->
+        </div>
+      </div>
+
+      <a class="cta-button" href="https://api.whatsapp.com/send?phone=61992144749"> Agende seu Horário</a>
+
+    </section>
+
+    <!--     <section id="courses" class="features" style="background-color: rgb(68, 96, 128);">
+      <div class="container-box">
+        <div class="box">
+          <h2 class="section-title">Nossos Cursos</h2>
+          <ul class="course-list">
+            <li>Alongamento de Unhas, Fibras de Vidro e Gel</li>
+            <li>Automaquiagem</li>
+            <li>Barbeiro</li>
+            <li>Cílios</li>
+            <li>Corte Feminino</li>
+          </ul>
+        </div>
+        <a class="cta-button" href="#">Entrar em Contato</a>
+      </div>
+    </section> -->
+
+    <section id="gallery" class="features" style="border-top: 1px solid #d6d6d6; background-color: rgb(255, 255, 255);">
+      <div class="tittle"
+        style="background-color: #dbd6d6; padding: 10px 20px; border-radius: 10px; width: 80%; display: flex; justify-content: center;">
+        <h1> Galeria de </h1>
+        <h1 style="color: rgb(196, 10, 10);"> Trabalhos </h1>
+      </div>
+
+      <div class="row">
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/GaleriaDeTrabalhos/img1.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Morena Iluminado </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/GaleriaDeTrabalhos/Img2.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Mechas </h2>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/GaleriaDeTrabalhos/img5.jpg" alt="Recurso 1">
+          </div>
+          <div class="legenda">
+            <h2> Idratação e Escova </h2>
+          </div>
+        </div>
+      </div>
+
+      <a class="cta-button" href="https://api.whatsapp.com/send?phone=61992144749"> Agende seu Horário</a>
+
+    </section>
+
+    <section id="testimonials" class="features"
+      style="border-top: 1px solid #d6d6d6; background-image: url(DiaNoiva.jpg);">
+      <div class="tittle"
+        style="background-color: #dbd6d6; padding: 10px 20px; border-radius: 10px; width: 85%; display: flex; justify-content: center;">
+        <h1> Depoimentos de </h1>
+        <h1 style="color: rgb(196, 10, 10);"> Clientes </h1>
+      </div>
+
+      <div class="row">
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/DepoimentosDeClientes/imgfeedback1.jpg" alt="Recurso 1">
+          </div>
+          <!-- <div class="legenda">
+            <h2> Alongamento de Unhas <br> (Fibra e Gel) </h2>
+          </div> -->
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/DepoimentosDeClientes/imgfeedback2.jpg" alt="Recurso 2">
+          </div>
+          <!-- <div class="legenda">
+            <h2> Alongamento de Unhas <br> (Fibra e Gel) </h2>
+          </div> -->
+        </div>
+
+        <div class="feature">
+          <div class="imgs">
+            <img src="src/img/DepoimentosDeClientes/imgfeedback3.jpg" alt="Recurso 3">
+          </div>
+          <!-- <div class="legenda">
+            <h2> Alongamento de Unhas <br> (Fibra e Gel) </h2>
+          </div> -->
+        </div>
+
+      </div>
+
+      <div class="btn">
+        <a class="cta-button" href="https://api.whatsapp.com/send?phone=61992144749"> Agende seu Horário</a>
+      </div>
+
+    </section>
+
+    <section id="contact" class="features">
+
+      <div class="tittle"
+        style="background-color: #dbd6d6; padding: 10px 20px; border-radius: 10px; width: 80%; display: flex; justify-content: center;">
+        <h1> Entre em </h1>
+        <h1 style="color: rgb(196, 10, 10);"> Contato </h1>
+      </div>
+
+      <div class="box-1" style="background-color: rgb(0, 0, 0);">
+        <div class="container-box">
+          <div class="box-local">
+            <div class="local">
+              <h1> Localização </h1>
+              <p> CLS 215 BLOCO B LOJA 09</p>
+              <p> ASA SUL - Brasília (DF) </p>
+            </div>
+
+            <div class="atendimento">
+              <h1> Atendimento </h1>
+              <p> Seg - Sáb: 08h - 18h </p>
+              <p> Domingo: 09 - 15h30 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.4208517445495!2d-47.92388812571746!3d-15.834463084811471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2557dcbc61e7%3A0x17401c2a50b436c1!2sSal%C3%A3o%20de%20Beleza%20Ornare%20Asa%20Sul%20Bras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1699552034559!5m2!1spt-BR!2sbr"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- <div class="box-2" style="background-color: rgb(0, 0, 0); width: 100%; height: 230px;">
+        <div class="container-box">
+          <div class="contato">
+            <h1> Contato </h1>
+            <h3> Telefone / WhatsApp </h3>
+            <br>
+            <p> (61) 9 8439-8996 </p>
+            <br>
+            <p> yedalimake@gmail.com</p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+  </div>
+  <footer>
+    <p>&copy; 2023 Ornare Hair. E-mail: yedalimake@gmail.com Contato Telefone / WhatsApp: (61) 9 8439-8996</p>
+  </footer>
+
+  <!-- Inclua a biblioteca Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@17.0.2/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    // Inicialize o Smooth Scroll
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+</body>
+
+</html>
